@@ -2594,6 +2594,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: auto;
   margin-right: auto;
 }
+.portfolio-area{
+background: #f9f6f4;
+}
+
 
 .portfolio-area .filters {
   text-align: center;
@@ -4330,7 +4334,6 @@ dl.accordion.time-line:before {
 }
 
 .single-footer-widget h4 {
-  color: #fff !important;
   margin-bottom: 25px;
   font-weight: 500;
 }
