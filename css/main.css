@@ -2333,6 +2333,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-text-fill-color: transparent;
 }
 
+
+
 .primary-btn {
   background: #43a52b;
   line-height: 42px;
@@ -2438,7 +2440,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- Start Banner Area ------------*/
 .banner-area {
-  background: #f9f9ff;
+  background: #f9f6f4;
+  padding-bottom: 5%;
+  min-height: 90vh;
 }
 
 .banner-area .fullscreen {
@@ -3100,7 +3104,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*--------  End Skillbar Style  -------------*/
 .timeline ul li {
-  background: #f9f9ff;
+  background: #e3e3e3;
   position: relative;
   margin: 0 auto;
   width: 2px;
@@ -4494,28 +4498,77 @@ dl.accordion.time-line:before {
 /*-------- end footer Area -------------*/
 
 
+/*----------General-------------*/
+
+.body-area {
+  background: #f9f6f4;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
 /*-----------Pricing table style --------------*/
 
-#pricing {
+.pricing {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 80%;
+  border: 1px solid  #e8e3e1;
+  margin:auto;
 }
 
-#pricing td, #pricing th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
 
-#pricing tr:nth-child(even){background-color: #f2f2f2;}
 
-#pricing tr:hover {background-color: #ddd;}
 
-#pricing th {
+.pricing tr {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #43a52b;
+  background-color: #fff;
+}
+.pricing td {
+  border: 0;
+  text-align: left !important;
+}
+
+
+.pricing th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left; 
+  background-color: #e8e3e1;
   color: white !important;
 }
 /*------------pricing table style --------------*/
+
+
+/*---------------service menu----------------*/
+
+.service-menu{
+  width: 80%;
+  margin: auto;
+}
+
+.menu-selected h4{
+  color: #43a52b !important;
+}
+
+.menu-item:hover{
+
+  cursor: pointer;
+}
+
+.margin-top{
+  margin-top:-70px;
+}
+
+@media (max-width: 767px) {
+  .margin-top {
+    margin-top:-40%;
+  }
+} 

@@ -39,7 +39,7 @@ $content-width: 360px;
   ul{
     
     li{
-      background: $offwhite;
+      background: #dfdfdf;
       position: relative;
       margin: 0 auto;
       width: 2px;
@@ -52,7 +52,7 @@ $content-width: 360px;
       
       &:before{
         content: '';
-        background: $primary-color;
+        background: #dfdfdf;
         position: absolute;
         left: 50%;
         top: 40%;

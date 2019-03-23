@@ -54,6 +54,21 @@
 			$(function(){
 				$('#navbar').load(navBarUrl);
 			});
+
+			var previousmenu = "hairmenu"
+			var previousdiv = "hairmenudiv"
+			function showMenu(menu){
+
+				document.getElementById(previousmenu).className="";
+				document.getElementById(menu).className="menu-selected";
+				previousmenu = menu;
+
+				menudiv = menu +"div";
+				document.getElementById(previousdiv).classList.add("hide");
+				document.getElementById(menudiv).classList.remove("hide");
+				previousdiv = menudiv;
+
+			}
 			</script>
 		<body>
 		
@@ -76,23 +91,181 @@
 			<!-- End banner Area -->					  
 			<section class="banner-area">
 				<div class="container">
-					<div class="row fullscreen align-items-center justify-content-between">
-						<div class="col-lg-6 col-md-6 banner-left">		
-                            <table id="pricing">
-                                <tr><th><b>S.No</b></th><th><b>Services</b></th><th><b>Prices</b></th></tr>
-                                <tr><td>75</td><td>Regular (30-40 Mins)</td><td>200/-</td></tr>
-                                <tr><td>76</td><td>Aroma (40-45 Mins)</td><td>250/-</td></tr>
-                                <tr><td>77</td><td>French (45 Mins)</td><td>  300/-</td></tr>
-                                <tr><td>78</td><td>Paraffin(45 Mins)</td><td>  350/-</td></tr>
-                                <tr><td>79</td><td>Spa (45 Mins)</td><td>  400/-</td></tr>
-                                <tr><td>80</td><td>Nail Cut and polish</td><td>  100/-</td></tr>
-                                <tr><td>81</td><td>Crystal</td><td>  600/-</td></tr>
-                                <tr><td>82</td><td>Nail art</td><td>  500/-</td></tr>
-                                <tr><td>83</td><td>Acrylic nail</td><td>  1500-2000/-</td></tr>
-                                <tr><td>84</td><td>Gel nail polish</td> <td> 600/-</td></tr>
+						<div class="row justify-content-between service-menu" style="margin-top:7%">
+							<div class="single-services menu-item">
+								<span id="hairmenu" class="menu-selected " onclick="showMenu('hairmenu')" onh>
+									<h4 >Hair</h4>
+								</span>
+							</div>
+							<div class="single-services menu-item">
+								<span id="waxmenu" onclick="showMenu('waxmenu')">
+									<h4>Waxing</h4>
+								</span>
+							</div>
+							<div class="single-services menu-item">
+									<span id="packagemenu" onclick="showMenu('packagemenu')">
+										<h4>Package</h4>
+									</a>
+							</div>
+						</div>
+					<div class="row  align-items-center justify-content-between" style="margin-top:3%"> 
+						<div id="hairmenudiv" class="table-responsive ">          
+                            <table  class="pricing table ">
+                                <tr><th><b>Services</b></th><th><b>Prices</b></th></tr>
+								<tr>
+										<td>Haircut</td>
+										<td><span style="">130/-</span></td>
+									</tr>
+									<tr>
+										<td>Haircut with wash</td>
+										<td><span style="">  150/- </span></td>
+									</tr>
+									<tr>
+										<td>Hair wash</td>
+										<td><span style="">50/- </span></td>
+									</tr>
+									 <tr>
+										<td>Haircut from super stylist</td>
+										<td><span style="">250/- </span></td>
+									</tr>
+									 <tr>
+										<td>Head shave</td>
+										<td><span style="">200/- </span></td>
+									</tr>
+									 <tr>
+										<td>Shave</td>
+										<td><span style="">70/-</span></td>              
+									 </tr>
+									 <tr>
+										<td>Beard design</td>
+										<td><span style="">100/-</span></td>
+									</tr> 
+									<tr>
+										<td>Haircut for child (boy/girl)</td>
+										<td><span style="">100-</span></td>
+									</tr> 
+									 <tr>
+										<td>Hair ironing </td>
+										<td><span style="">300-600/-</span></td>
+									</tr> <tr>
+										<td>Temporary curl </td>
+										<td><span style="">300-600/-</span></td>
+									</tr> <tr>
+										<td>Perming/permanent curl    </td>
+										<td><span style="">1999-3999/-</span></td>
+									</tr> <tr>
+										<td>Anti frizz treatments </td>
+										<td><span style="">1999-3999/-</span></td>
+									</tr> <tr>
+										<td>Hair straightening </td>
+										<td><span style="">1999-4999/-</span></td>
+									</tr> 
+									<tr>
+										<td>Hair rebonding </td>
+										<td><span style="">2999-4999/-</span></td>
+									</tr>
+									 <tr>
+										<td>Scalp massage</td>
+										<td><span style="">300/-</span></td>
+									</tr>
+									 <tr>
+										<td>Hair spa</td>
+										<td><span style="">500-600/-</span></td>
+									</tr>
+									<tr>
+										<td>Hair fall/anti dandruff treatment </td>
+										<td><span style="">600/-</span></td>
+									</tr>
+									<tr>
+										<td>Hair colour </td>
+										<td><span style="">500-900/-</span></td>
+									</tr>
+									<tr>
+										<td>Streaks</td>
+										<td><span style="">500-1200/-</span></td>
+									</tr>
                             </table>
-                        </div>
-                    </div>
+						</div>
+						<div id="waxmenudiv" class="table-responsive hide">
+							<table  class="pricing table ">
+								<tr><th><b>Services</b></th><th><b>Prices</b></th></tr>
+																		<tr>
+											<td>Under arms</td>
+											<td><span >200/-</span></td>
+										</tr>
+										<tr>
+											<td>Half arms</td>
+											<td><span >300/-</span></td>
+										</tr>
+										<tr>
+											<td>Full arms</td>
+											<td><span >600/-</span></td>
+										</tr>
+									
+										<tr>
+											<td>Full legs</td>
+											<td><span >1000/-</span></td>
+										</tr>
+										<tr>
+											<td>Half legs</td>
+											<td><span >600/-</span></td>
+									
+										</tr>
+										<tr>
+											<td>Full body</td>
+											<td><span >1800/-</span></td>
+										</tr>
+										<tr>
+											<td>Stomach</td>
+											<td><span >1000/-</span></td>
+									
+										</tr>
+										<tr>
+											<td>Chest</td>
+											<td><span >1000/-</span></td>
+									
+										</tr>
+										<tr>
+											<td>Back</td>
+											<td><span >1000/-</span></td>
+									
+									
+									
+										</tr>
+							</table>
+						</div>
+						<div id="packagemenudiv" class="table-responsive hide">
+								<table  class="pricing table ">
+									<tr><th><b>Services</b></th><th><b>Prices</b></th></tr>
+									<tr>
+											<td>Hair cut + Shave + Aroma Head massage</td>
+											<td><span >400/-</span></td>
+										</tr>
+										<tr>
+											<td>Hair colour + Hair cut</td>
+											<td><span >600/-</span></td>
+										</tr>
+										<tr>
+											<td>Facial + Bleach + Hair Cut + Shave + Aroma Pedicure</td>
+											<td><span >999/-</span></td>
+										</tr>
+										
+										<tr>
+											<td>Mini facial+ Head massage + Hair cut +pedicure</td>
+											<td><span >799/-</span></td>
+										</tr>
+										<tr>
+											<td>Facial + Bleach + Hair Cut + Shave + Hair Spa + Hair colour</td>
+											<td><span >Contact nearest outlet</span></td>
+										</tr>
+										<tr>
+											<td>Gold Facial + Bleach + Hair Cut</td>
+											<td><span >1550/-</span></td>
+										</tr>
+								</table>
+							</div>
+					</div>
+					
                 </div>
             </section>
             
@@ -471,146 +644,6 @@
 			<!-- End post-content Area -->
 			
             <!-- start footer Area -->
-			<footer class="footer-area section-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-5 col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h4>Adayar</h4>
-								<p>
-									<b>Address :</b> No. 19/2, 3rd Main Road.,
-									Kasthuribai Nagar, Adyar,
-									(Next to KFC)
-									Chennai - 600 020
-								</p>
-								<p>
-									<b>Hotlines :</b> 9840802073, 9840909139
-								</p>
-								<p>
-									<b>Landline :</b> 044-42115624 
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-5 col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h4>Spencer Plaza</h4>
-								<p>
-									<b>Address :</b> No. F 43 A, First Floor, Phase II,
-									Spencerplaza,
-									Mount Road,
-									Chennai - 600 002 
-								</p>
-								<p>
-									<b>Hotlines :</b> 9840802073, 9840909139
-								</p>
-								<p>
-									<b>Landline :</b> 044-28494343
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-5 col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h4>Perumbakkam</h4>
-								<p>
-									<b>Address :</b> 
-									No:2/40,1-A,1st Floor,Dozo Tower,
-									Opposite to Yellowbell Supermarket,
-									Perumbakkam main road,
-									Perumbakkam,Chennai,Tamil Nadu
-									600100
-								</p>
-								<p>
-									<b>Hotlines :</b> 9500124300
-								</p>
-								<p>
-									<b>Landline :</b> 044-48550555
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="row" style="margin-top: 4%;">
-						<div class="col-lg-5 col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h4>Madurai </h4>
-								<p>
-									<b>Address :</b> 44,Sakthi velammal street,S.S.colony,
-									Behind ibaco ice cream parlour,
-									Bypass road,Madurai -10.
-								</p>
-								<p>
-									<b>Hotlines :</b> 9344130378
-								</p>
-								<p>
-									<b>Landline :</b> 044-42115624 
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-5 col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h4>Pammal</h4>
-								<p>
-									<b>Address :</b> No:6,Gandhi Road, Sankar nagar,
-									Near Sankara eye Hospital and D2D Super market
-									Pammal, Chennai-75.
-								</p>
-								<p>
-									<b>Hotlines :</b> 9840802073
-								</p>
-								<p>
-									<b>Landline :</b> 044-22480789
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-5 col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h4>Thoraipakkam</h4>
-								<p>
-									<b>Address :</b> 5/353,1st Floor,OMR Road,
-									Opposite to Thambivilas Near CTS,
-									Thoraipakkam
-									Chennai - 600 097
-								</p>
-								<p>
-									<b>Hotlines :</b> 9884268868
-								</p>
-								<p>
-									<b>Landline :</b> 044-24582998 
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="row" style="margin-top: 4%;">
-						<div class="col-lg-5 col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h4>Velachery</h4>
-								<p>
-									<b>Address :</b> 
-									New No.53 Old No.18A,First Floor, Drowpathi Amman Koil
-									First Cross Street,100 Feet Velachery Bye Pass Road,
-									Beside Subway, Velachery, Chennai - 600 042							
-								</p>
-								<p>
-									<b>Hotlines :</b> 9884400085,9962727735
-								</p>
-								<p>
-									<b>Landline :</b> 044-22480789
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-5 col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h4>Contact Us</h4>
-								<div class="footer-social d-flex align-items-center">
-									<a href="#"><i class="fa fa-facebook"></i></a>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-									<a href="#"><i class="fa fa-dribbble"></i></a>
-									<a href="#"><i class="fa fa-behance"></i></a>
-							</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
-            
+			
 		</body>
 	</html>
