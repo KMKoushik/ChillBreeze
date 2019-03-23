@@ -1,5 +1,7 @@
 
 var navBarUrl = "/ChillBreeze/navbar.html"
+
+var footerUrl = "/ChillBreeze/footer.html"
 $(document).ready(function() {
     "use strict";
 

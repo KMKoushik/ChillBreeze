@@ -2312,7 +2312,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*  Homepage Styles
 /* =================================== */
 .section-gap {
-  padding: 120px 0;
+  padding: 18px 0;
 }
 
 .alert-msg {
@@ -2443,6 +2443,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #f9f6f4;
   padding-bottom: 5%;
   min-height: 90vh;
+  position: relative;
 }
 
 .banner-area .fullscreen {
@@ -4512,6 +4513,9 @@ dl.accordion.time-line:before {
   display: block;
 }
 
+.footer-text{
+  color: #fff;
+}
 /*-----------Pricing table style --------------*/
 
 .pricing {
