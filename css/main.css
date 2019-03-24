@@ -4519,6 +4519,11 @@ dl.accordion.time-line:before {
 .footer-text{
   color: #fff;
 }
+
+.menu-row{
+padding-left: 5%;
+padding-right: 5%;
+}
 /*-----------Pricing table style --------------*/
 
 .pricing {
@@ -4563,6 +4568,7 @@ dl.accordion.time-line:before {
 
 .menu-selected h4{
   color: #43a52b !important;
+  border-bottom: 2px solid currentColor;
 }
 
 .menu-item:hover{
